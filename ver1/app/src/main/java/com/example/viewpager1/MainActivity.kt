@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        tbTab.setupWithViewPager(vpViewPager)
         val adapter = FruitPagerAdapter(supportFragmentManager)
 
         adapter.addFragment(Fragment1(), "사과")
@@ -28,6 +28,8 @@ class MainActivity : AppCompatActivity() {
 
 //        adapter.data = data
         vpViewPager.adapter = adapter
-        tbTab.setupWithViewPager(vpViewPager)
+        vpViewPager.offscreenPageLimit = 1
+
     }
+
 }
