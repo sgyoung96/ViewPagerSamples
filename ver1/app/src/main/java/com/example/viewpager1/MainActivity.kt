@@ -16,9 +16,9 @@ class MainActivity : AppCompatActivity() {
         tbTab.setupWithViewPager(vpViewPager)
         val adapter = FruitPagerAdapter(supportFragmentManager)
 
-        adapter.addFragment(Fragment1(), "사과")
-        adapter.addFragment(Fragment2(), "바나나")
-        adapter.addFragment(Fragment3(), "오렌지")
+        adapter.addFragment(Fragment1(), "NAVER")
+        adapter.addFragment(Fragment2(), "DAUM")
+        adapter.addFragment(Fragment3(), "GOOGLE")
 
 //        data.apply {
 //            add(Fruit(title = "사과"))

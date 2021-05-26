@@ -23,15 +23,6 @@ class Fragment1 : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        // 클릭시 새 창 안 뜨게 막아줌
-//        webView?.webViewClient(WebViewClient())
-
-//        wvNaver.settings.javaScriptEnabled = true
-
-//        wvNaver.webChromeClient = WebChromeClient()
-//        wvNaver.webViewClient = WebViewClient()
-
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -44,5 +35,4 @@ class Fragment1 : Fragment() {
         view.wvNaver.loadUrl("https://www.naver.com")
         return view
     }
-
 }
